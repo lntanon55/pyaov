@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="2.000" loop="false">
+    <Track trackName="SetActorNodeActiveDuration1" eventType="SetActorNodeActiveDuration" guid="3cfbc4b2-36b1-4b21-8193-a44f8f3f9920" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SetActorNodeActiveDuration" time="0.000" length="2.000" isDuration="true" guid="395939b1-97e4-40b0-ad1e-9295729c3c1f">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="node" value="Chibang" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="SetActorNodeActiveDuration1" eventType="SetActorNodeActiveDuration" guid="a8b0bbb8-2108-45c6-9893-5d1daefa46e0" enabled="false" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SetActorNodeActiveDuration" time="0.000" length="2.000" isDuration="true" guid="5d5923c1-c943-4745-a736-bccc14567c2f">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="node" value="Jian01" refParamName="" useRefParam="false" />
+        <bool name="enabled" value="false" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="SetActorNodeActiveDuration1" eventType="SetActorNodeActiveDuration" guid="50e794a0-8c48-4a5f-b7ac-7df3d94cc735" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SetActorNodeActiveDuration" time="0.000" length="2.000" isDuration="true" guid="bb440a82-5596-4818-9c63-f1bcbef9f0a5">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="node" value="Jian" refParamName="" useRefParam="false" />
+        <bool name="enabled" value="false" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="CheckConditionDuration0" eventType="CheckConditionDuration" guid="f1531cb0-4ed9-42b9-b335-4ee32a5d4280" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="CheckConditionDuration" time="0.000" length="2.000" isDuration="true" guid="c890776e-8213-44fb-a324-2c104dce5d9c">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <bool name="bActorInBattle" value="true" refParamName="" useRefParam="false" />
+        <Enum name="operatorMethod" value="0" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="CheckUseSkillDuration0" eventType="CheckUseSkillDuration" guid="e9887bbf-ebea-4bcc-bfbc-c2c5a3c537f5" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="CheckUseSkillDuration" time="0.000" length="2.000" isDuration="true" guid="4b42c3cb-726d-4220-a964-e10e8a35dc80">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <bool name="commonAttack" value="true" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="CombinationConditionDuration0" eventType="CombinationConditionDuration" guid="411bfcc5-a08c-49c6-8560-3ef6a4751d9e" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="CombinationConditionDuration" time="0.000" length="2.000" isDuration="true" guid="e77a9cb5-f0bb-4bce-979c-8f51cbc83b95">
+        <Array name="CondiTrackIds" refParamName="" useRefParam="false" type="TrackObject">
+          <TrackObject id="3" guid="f1531cb0-4ed9-42b9-b335-4ee32a5d4280" />
+          <TrackObject id="4" guid="e9887bbf-ebea-4bcc-bfbc-c2c5a3c537f5" />
+        </Array>
+        <Array name="CheckCondiTrackStatus" refParamName="" useRefParam="false" type="bool">
+          <bool value="true" />
+          <bool value="true" />
+        </Array>
+        <Array name="IsOrConditions" refParamName="" useRefParam="false" type="bool">
+          <bool value="true" />
+          <bool value="true" />
+        </Array>
+      </Event>
+    </Track>
+    <Track trackName="RemoveBuffTick0" eventType="RemoveBuffTick" guid="ded27cf0-192b-4a7d-933b-430ad761b638" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="5" guid="411bfcc5-a08c-49c6-8560-3ef6a4751d9e" status="true" />
+      <Event eventName="RemoveBuffTick" time="0.000" isDuration="false" guid="9152e45c-8cfd-4830-88e0-45735c18ecb3">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <int name="buffId" value="130910" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="RemoveBuffTick0" eventType="RemoveBuffTick" guid="41d07425-6389-43b5-81e4-be0275cda53d" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="5" guid="411bfcc5-a08c-49c6-8560-3ef6a4751d9e" status="true" />
+      <Event eventName="RemoveBuffTick" time="0.000" isDuration="false" guid="11a08a7e-f648-4075-93b0-ea03d75e3b1b">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <int name="buffId" value="130911" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

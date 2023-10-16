@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="5.000" loop="false">
+    <Track trackName="ShowComboEffectDuration0" eventType="ShowComboEffectDuration" guid="7cf5bd97-b531-44a0-b45d-7db6827bb91d" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="ShowComboEffectDuration" time="0.000" length="5.000" isDuration="true" guid="fd0eb009-5a38-4caf-bc94-73108c5cf13c">
+        <Enum name="slotType" value="2" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="CheckSkillCombineConditionDuration0" eventType="CheckSkillCombineConditionDuration" guid="4a954b20-07c6-433d-a534-214c6e44a439" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="CheckSkillCombineConditionDuration" time="0.000" length="5.000" isDuration="true" guid="eafd5410-3b11-4c49-bed2-0648c36c38f5">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <int name="skillCombineId" value="13000" refParamName="" useRefParam="false" />
+        <Enum name="checkOPType" value="3" refParamName="" useRefParam="false" />
+        <bool name="bCheckSkillMark" value="true" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="StopAction0" eventType="StopAction" guid="66a406f9-15fa-43a1-85a2-42f98a3fda56" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="1" guid="4a954b20-07c6-433d-a534-214c6e44a439" status="true" />
+      <Event eventName="StopAction" time="0.000" isDuration="false" guid="1e94e981-9eff-415e-971c-8e62d0a1de88" />
+    </Track>
+  </Action>
+</Project>

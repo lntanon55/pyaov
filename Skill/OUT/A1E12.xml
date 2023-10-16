@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_BulletDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="0.200" loop="false">
+    <Track trackName="SkillFuncInstant0" eventType="SkillFuncInstant" guid="8d09eb2f-50ed-4358-a741-27ca7e1a94dd" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SkillFuncInstant" time="0.000" isDuration="false" guid="b9ea57b1-392d-46b5-a099-18a20d40d9ac">
+        <Enum name="SkillFuncType" value="2" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="过滤非英雄" eventType="FilterTargetType" guid="b9850dad-b819-42b9-abfa-14b8665f5d14" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="FilterTargetType" time="0.000" isDuration="false" guid="731dcb13-93e9-4ff3-93a9-a55aeec653dc">
+        <TemplateObject name="targetId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <bool name="bFilterMonter" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterBoss" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterOrgan" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterChest" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterEye" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterPet" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterMajorMonster" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterMinorMonster" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterSoldier" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterOtherMonster" value="true" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="吸血" eventType="SkillFuncInstant" guid="b3c91946-5d58-4a89-867c-56debb6f2cf5" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="1" guid="b9850dad-b819-42b9-abfa-14b8665f5d14" status="true" />
+      <Event eventName="SkillFuncInstant" time="0.000" isDuration="false" guid="e957ab51-57c0-4c03-81ba-53e69cbec6cb">
+        <Enum name="SkillFuncType" value="10" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

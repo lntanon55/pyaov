@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="2.000" loop="false">
+    <Track trackName="SkillFuncPerioidc0" eventType="SkillFuncPerioidc" guid="fd0aea13-a24e-4cb4-9ef8-947f44f2152c" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SkillFuncPerioidc" time="0.000" length="2.000" isDuration="true" guid="cd20de8a-f84d-4f02-bdff-48189877e37b">
+        <Enum name="SkillFuncType" value="6" refParamName="" useRefParam="false" />
+        <int name="PeriodicInterval" value="200" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

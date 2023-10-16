@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_BulletDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="0.200" loop="false">
+    <Track trackName="TriggerParticleTick0" eventType="TriggerParticleTick" guid="b040f49f-7d49-418d-849d-93d1fe91d208" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="TriggerParticleTick" time="0.000" isDuration="false" guid="475f7178-4322-4318-b8e5-890b7b70edc7">
+        <TemplateObject name="targetId" id="-1" objectName="None" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="objectSpaceId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="resourceName" value="prefab_skill_effects/hero_skill_effects/130_gongbenwuzang/gongbenwuzang_hurt01" refParamName="" useRefParam="false" />
+        <float name="lifeTime" value="0.600" refParamName="" useRefParam="false" />
+        <Vector3 name="bindPosOffset" x="0.000" y="1.000" z="0.000" refParamName="" useRefParam="false" />
+        <EulerAngle name="bindRotOffset" x="0.000" y="180.000" z="0.000" refParamName="" useRefParam="false" />
+        <TemplateObject name="lookTargetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="PlayHeroSoundTick20" eventType="PlayHeroSoundTick" guid="473e10a6-9ddb-4704-af15-615c4ae64a53" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="PlayHeroSoundTick" time="0.000" isDuration="false" guid="de48c290-b0db-417d-b299-f4416b4eebea">
+        <TemplateObject name="targetId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="sourceId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="eventName" value="Play_130_GongBen_Airi_Attack_Hit3_Skin15" refParamName="" useRefParam="false" />
+        <Array name="extraSkinId" refParamName="" useRefParam="false" type="uint">
+          <uint value="6" />
+          <uint value="11" />
+          <uint value="13" />
+        </Array>
+      </Event>
+    </Track>
+    <Track trackName="CameraShakeDuration0" eventType="CameraShakeDuration" guid="2d65842d-f95c-4554-9573-fa999c0c432f" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="CameraShakeDuration" time="0.000" length="0.200" isDuration="true" guid="aeac1224-a37d-4b52-8030-ffe6913789fa">
+        <bool name="useMainCamera" value="true" refParamName="" useRefParam="false" />
+        <bool name="filter_self" value="true" refParamName="" useRefParam="false" />
+        <bool name="canBeCover" value="false" refParamName="" useRefParam="false" />
+        <Vector3 name="shakeRange" x="0.100" y="0.100" z="0.100" refParamName="" useRefParam="false" />
+        <bool name="cosDecay" value="true" refParamName="" useRefParam="false" />
+        <String name="curvesPath" value="Prefab_Skill_Assets/CameraShakeCurves/nor01_5" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="SkillFuncInstant0" eventType="SkillFuncInstant" guid="8d09eb2f-50ed-4358-a741-27ca7e1a94dd" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SkillFuncInstant" time="0.000" isDuration="false" guid="6d0a9b72-f16d-4331-8273-f7488b8d7eee">
+        <Enum name="SkillFuncType" value="2" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="过滤非英雄" eventType="FilterTargetType" guid="b9850dad-b819-42b9-abfa-14b8665f5d14" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="FilterTargetType" time="0.000" isDuration="false" guid="57a91475-164b-4642-a4b9-51886a88fefa">
+        <TemplateObject name="targetId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <bool name="bFilterMonter" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterBoss" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterOrgan" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterChest" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterEye" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterPet" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterMajorMonster" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterMinorMonster" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterSoldier" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterOtherMonster" value="true" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="吸血" eventType="SkillFuncInstant" guid="b3c91946-5d58-4a89-867c-56debb6f2cf5" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="4" guid="b9850dad-b819-42b9-abfa-14b8665f5d14" status="true" />
+      <Event eventName="SkillFuncInstant" time="0.000" isDuration="false" guid="eac55385-7894-479a-bf72-781f0b0aa55a">
+        <Enum name="SkillFuncType" value="10" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="过滤机关" eventType="FilterTargetType" guid="2edf7903-cc3f-4d1c-bfdb-826d2f7d53b2" enabled="false" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="FilterTargetType" time="0.000" isDuration="false" guid="91af3830-7522-40a6-b5f2-167c3ed76a85">
+        <TemplateObject name="targetId" id="1" objectName="target" isTemp="false" refParamName="" useRefParam="false" />
+        <bool name="bFilterOrgan" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterChest" value="true" refParamName="" useRefParam="false" />
+        <bool name="bFilterEye" value="true" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="吸血" eventType="SkillFuncInstant" guid="0d03fde1-07e1-4867-92cc-5b5f2dc638d6" enabled="false" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Condition id="4" guid="b9850dad-b819-42b9-abfa-14b8665f5d14" status="true" />
+      <Event eventName="SkillFuncInstant" time="0.000" isDuration="false" guid="6b5f840f-812f-459c-a2f7-cbdb51a030af">
+        <Enum name="SkillFuncType" value="10" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

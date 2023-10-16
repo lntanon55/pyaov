@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+    <TemplateObject id="2" objectName="bullet" isTemp="true" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="targetdir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_BulletPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="6.000" loop="false">
+    <Track trackName="TriggerParticle0" eventType="TriggerParticle" guid="1b7ea338-fd08-42c9-aed3-0b80ebbad94d" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="TriggerParticle" time="0.000" length="5.000" isDuration="true" guid="5980f5dc-c793-444d-a0bb-6aa3ed04256b">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="objectSpaceId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="resourceName" value="prefab_skill_effects/hero_skill_effects/130_gongbenwuzang/13015/gongbenwuzang_hurt01" refParamName="" useRefParam="false" />
+        <Vector3 name="scaling" x="0.400" y="1.000" z="1.000" refParamName="" useRefParam="false" />
+        <Vector3i name="scalingInt" x="10000" y="10000" z="10000" refParamName="" useRefParam="false" />
+        <bool name="bUseRealScaling" value="true" refParamName="" useRefParam="false" />
+        <bool name="bKeepChildScale" value="true" refParamName="" useRefParam="false" />
+        <bool name="bInvisibleEnemy" value="true" refParamName="" useRefParam="false" />
+        <bool name="bInvisibleTeamNotSelf" value="true" refParamName="" useRefParam="false" />
+        <String name="syncAnimationName" value="" refParamName="" useRefParam="false" />
+        <String name="customTagName" value="" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

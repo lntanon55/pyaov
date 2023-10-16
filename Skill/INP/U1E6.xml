@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_TargetDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+    <Vector3i name="_TargetPos" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="5.000" loop="false">
+    <Track trackName="SkillFuncDuration0" eventType="SkillFuncDuration" guid="4d0b0c19-6d8f-4b84-8004-a223d766e6f4" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SkillFuncDuration" time="0.000" length="5.000" isDuration="true" guid="9278853f-120f-4119-849f-9901d630ebc4">
+        <Enum name="SkillFuncType" value="4" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <TemplateObjectList>
+    <TemplateObject id="0" objectName="self" isTemp="false" />
+    <TemplateObject id="1" objectName="target" isTemp="false" />
+  </TemplateObjectList>
+  <RefParamList>
+    <Vector3i name="_BulletDir" x="0" y="0" z="0" refParamName="" useRefParam="false" />
+  </RefParamList>
+  <Action tag="" length="0.800" loop="false">
+    <Track trackName="SkillFuncDuration0" eventType="SkillFuncDuration" guid="ed1f9e72-3716-4a9b-9a8c-fe3ca70eb675" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="SkillFuncDuration" time="0.000" length="0.800" isDuration="true" guid="8aaf0862-bc5d-4e4e-a92e-8768b458f4e2">
+        <Enum name="SkillFuncType" value="31" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+    <Track trackName="PlayHeroSoundTick2" eventType="PlayHeroSoundTick" guid="a2ba47b8-6b9b-4eb8-ba76-9984cff10919" enabled="true" useRefParam="false" refParamName="" r="0.000" g="0.000" b="0.000" execOnForceStopped="false" execOnActionCompleted="false" stopAfterLastEvent="true">
+      <Event eventName="PlayHeroSoundTick" time="0.000" isDuration="false" guid="f2b860d4-4c21-4b0d-8b05-f3a9d01f3d2d">
+        <TemplateObject name="targetId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <TemplateObject name="sourceId" id="0" objectName="self" isTemp="false" refParamName="" useRefParam="false" />
+        <String name="eventName" value="Play_130_GongBen_Airi_Attack_Hit1" refParamName="" useRefParam="false" />
+      </Event>
+    </Track>
+  </Action>
+</Project>
